@@ -1,0 +1,16 @@
+<%- include('partials/head')  %> 
+<%- include('partials/navbar')  %> 
+
+    <h1>All Fish</h1>
+    <% for(let fish of data){ %>
+        <div>
+            <h3>Name : <%= fish.name %>
+            </h3>
+            <p> Price: <b>
+                    <%= fish.price %>
+                </b> </p>
+            <hr>
+        </div>
+        <% } %>
+
+<%- include('partials/footer')  %> 
